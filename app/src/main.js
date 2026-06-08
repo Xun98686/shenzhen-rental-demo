@@ -106,7 +106,7 @@ function renderMap(selectedResult) {
           <p class="eyebrow">03 · Simulated map</p>
           <h2>深圳通勤示意图</h2>
         </div>
-        <span class="status">${state.loading ? 'Calling DemoMapAdapter...' : 'API ready'}</span>
+        <span class="status">${state.loading ? '模拟通勤 API 测算中...' : 'API ready'}</span>
       </div>
       <svg viewBox="0 0 100 70" class="map" role="img" aria-label="深圳合租候选区域和成员目的地通勤示意图">
         <path d="M8 48 C18 28, 35 20, 51 25 C68 30, 80 22, 91 35 C87 49, 73 60, 51 61 C32 62, 17 57, 8 48Z" class="district-shape"></path>
@@ -158,7 +158,6 @@ function renderResults(selectedResult) {
       <article class="panel algorithm-panel">
         <h2>推荐规则</h2>
         <p>总分 = 通勤公平 + 平均通勤 + 最差通勤惩罚 + 租金适配 + 生活便利 + 地铁可达。</p>
-        <p>面试讲述重点：这里先用 DemoMapAdapter 模拟高德通勤矩阵，未来替换真实 AMapAdapter 即可。</p>
       </article>
     </section>
   `;
